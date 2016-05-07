@@ -1,3 +1,0 @@
-## Blocipedia: an application that allows users to create public and private Wikis
-
-Made with my mentor at [Bloc](http://bloc.io).
