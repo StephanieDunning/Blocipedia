@@ -1,0 +1,945 @@
+
+
+Started GET "/" for ::1 at 2016-05-06 16:29:33 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 2767ms (Views: 2726.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-06 16:29:38 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 16:29:38 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-06 16:29:38 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 16:29:38 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 16:29:38 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 16:29:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 16:29:38 -0700
+
+
+Started GET "/" for ::1 at 2016-05-06 16:36:24 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 804ms (Views: 772.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-6ad85c19d13e348657928ba5f3cc50c51134389f31d0ab2743429b53627cc089.css?body=1" for ::1 at 2016-05-06 16:36:27 -0700
+
+
+Started GET "/" for ::1 at 2016-05-06 16:36:54 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-06 16:36:54 -0700
+
+
+Started GET "/assets/welcome.self-af80e89f284633fc4b945400480171485bc4ee40afba1175122bd2c8b95a91d8.css?body=1" for ::1 at 2016-05-06 16:36:54 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 16:36:54 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 16:36:54 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 16:36:54 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 16:36:54 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 16:36:54 -0700
+
+
+Started GET "/" for ::1 at 2016-05-06 16:37:08 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-06 16:37:09 -0700
+
+
+Started GET "/assets/welcome.self-5614dd00873a132e10a21ddef307ed0d988046625f036cb5da39e36811322051.css?body=1" for ::1 at 2016-05-06 16:37:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 16:37:09 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 16:37:09 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 16:37:09 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 16:37:09 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 16:37:09 -0700
+
+
+Started GET "/" for ::1 at 2016-05-06 16:37:16 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-bc71db54777b15e896ed7cbb2183c2edc667782699adba9f3a3ca283d64d4833.css?body=1" for ::1 at 2016-05-06 16:37:17 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 16:37:17 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-06 16:37:17 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 16:37:17 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 16:37:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 16:37:17 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 16:37:17 -0700
+
+
+Started GET "/" for ::1 at 2016-05-06 16:40:14 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 198ms (Views: 197.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-5916cb1c4b1ca9d3e8445aad09713e1c446b989e123fb1d15f481bf3ee0d48e0.css?body=1" for ::1 at 2016-05-06 16:40:15 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-06 16:40:15 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 16:40:15 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 16:40:15 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 16:40:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 16:40:15 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 16:40:15 -0700
+
+
+Started GET "/" for ::1 at 2016-05-06 16:40:18 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 38ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-5916cb1c4b1ca9d3e8445aad09713e1c446b989e123fb1d15f481bf3ee0d48e0.css?body=1" for ::1 at 2016-05-06 16:40:18 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 16:40:18 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-06 16:40:18 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 16:40:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 16:40:18 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 16:40:18 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 16:40:18 -0700
+
+
+Started GET "/" for ::1 at 2016-05-06 16:41:17 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-5916cb1c4b1ca9d3e8445aad09713e1c446b989e123fb1d15f481bf3ee0d48e0.css?body=1" for ::1 at 2016-05-06 16:41:18 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 16:41:18 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-06 16:41:18 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 16:41:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 16:41:18 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 16:41:18 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 16:41:18 -0700
+
+
+Started GET "/" for ::1 at 2016-05-06 16:41:25 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-5916cb1c4b1ca9d3e8445aad09713e1c446b989e123fb1d15f481bf3ee0d48e0.css?body=1" for ::1 at 2016-05-06 16:41:25 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 16:41:25 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-06 16:41:25 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 16:41:26 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 16:41:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 16:41:26 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 16:41:26 -0700
+
+
+Started GET "/" for ::1 at 2016-05-06 16:50:13 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 374ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/images
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/javascripts
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/stylesheets
+  /Users/stephaniedunning/bloc/Blocipedia/vendor/assets/javascripts
+  /Users/stephaniedunning/bloc/Blocipedia/vendor/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/jquery-rails-4.1.1/vendor/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/fonts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/images
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets):
+    3: <head>
+    4:   <title>Blocipedia</title>
+    5:   <meta name="viewport" content="width=device-width, initial-scale=1">
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/application.scss:17
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1833462838800047085_70237694950960'
+
+
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.2ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1419.1ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1541.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-06 16:54:16 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/images
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/javascripts
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/stylesheets
+  /Users/stephaniedunning/bloc/Blocipedia/vendor/assets/javascripts
+  /Users/stephaniedunning/bloc/Blocipedia/vendor/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/jquery-rails-4.1.1/vendor/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/fonts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/images
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets):
+    3: <head>
+    4:   <title>Blocipedia</title>
+    5:   <meta name="viewport" content="width=device-width, initial-scale=1">
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/application.scss:17
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1833462838800047085_70237694950960'
+
+
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.9ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (119.0ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (152.8ms)
+
+
+Started GET "/" for ::1 at 2016-05-06 16:54:55 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/images
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/javascripts
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/stylesheets
+  /Users/stephaniedunning/bloc/Blocipedia/vendor/assets/javascripts
+  /Users/stephaniedunning/bloc/Blocipedia/vendor/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/jquery-rails-4.1.1/vendor/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/fonts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/images
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets):
+    3: <head>
+    4:   <title>Blocipedia</title>
+    5:   <meta name="viewport" content="width=device-width, initial-scale=1">
+    6:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/application.scss:17
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1833462838800047085_70237781253000'
+
+
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.6ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (120.7ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (141.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-06 17:11:07 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (50.9ms)
+Completed 500 Internal Server Error in 500ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/images
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/javascripts
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/stylesheets
+  /Users/stephaniedunning/bloc/Blocipedia/vendor/assets/javascripts
+  /Users/stephaniedunning/bloc/Blocipedia/vendor/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/jquery-rails-4.1.1/vendor/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/fonts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/images
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets):
+    3: <head>
+    4:   <title>Blocipedia</title>
+    5:   <meta name="viewport" content="width=device-width, initial-scale=1">
+    6:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/application.scss:17
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___3465142678195900350_70212661746200'
+
+
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (23.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (146.9ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1506.7ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1651.8ms)
+
+
+Started GET "/" for ::1 at 2016-05-06 17:11:11 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/images
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/javascripts
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/stylesheets
+  /Users/stephaniedunning/bloc/Blocipedia/vendor/assets/javascripts
+  /Users/stephaniedunning/bloc/Blocipedia/vendor/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/jquery-rails-4.1.1/vendor/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/fonts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/images
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets):
+    3: <head>
+    4:   <title>Blocipedia</title>
+    5:   <meta name="viewport" content="width=device-width, initial-scale=1">
+    6:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/application.scss:17
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___3465142678195900350_70212661746200'
+
+
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.7ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.8ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.6ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (107.6ms)
+
+
+Started GET "/" for ::1 at 2016-05-06 17:11:36 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/images
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/javascripts
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/stylesheets
+  /Users/stephaniedunning/bloc/Blocipedia/vendor/assets/javascripts
+  /Users/stephaniedunning/bloc/Blocipedia/vendor/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/jquery-rails-4.1.1/vendor/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/fonts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/images
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets):
+    3: <head>
+    4:   <title>Blocipedia</title>
+    5:   <meta name="viewport" content="width=device-width, initial-scale=1">
+    6:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/application.scss:17
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___3465142678195900350_70212661746200'
+
+
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.8ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.7ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (101.4ms)
+
+
+Started GET "/" for ::1 at 2016-05-06 17:12:38 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1313ms (Views: 1312.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-05-06 17:12:40 -0700
+
+
+Started GET "/assets/welcome.self-5916cb1c4b1ca9d3e8445aad09713e1c446b989e123fb1d15f481bf3ee0d48e0.css?body=1" for ::1 at 2016-05-06 17:12:40 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 17:12:40 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 17:12:40 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 17:12:40 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 17:12:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 17:12:40 -0700
+
+
+Started GET "/" for ::1 at 2016-05-06 17:29:29 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 532ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/images
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/javascripts
+  /Users/stephaniedunning/bloc/Blocipedia/app/assets/stylesheets
+  /Users/stephaniedunning/bloc/Blocipedia/vendor/assets/javascripts
+  /Users/stephaniedunning/bloc/Blocipedia/vendor/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/jquery-rails-4.1.1/vendor/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/javascripts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/fonts
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/images
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets
+  /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/bootstrap-4.0.0.alpha3/assets/stylesheets):
+    3: <head>
+    4:   <title>Blocipedia</title>
+    5:   <meta name="viewport" content="width=device-width, initial-scale=1">
+    6:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/application.scss:17
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2981779262700444797_70245734259040'
+
+
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (21.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (104.6ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1506.7ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1727.5ms)
+
+
+Started GET "/" for ::1 at 2016-05-06 17:29:53 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2346ms (Views: 2345.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-05-06 17:29:55 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 17:29:55 -0700
+
+
+Started GET "/assets/welcome.self-5916cb1c4b1ca9d3e8445aad09713e1c446b989e123fb1d15f481bf3ee0d48e0.css?body=1" for ::1 at 2016-05-06 17:29:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 17:29:55 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 17:29:55 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 17:29:55 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 17:29:55 -0700
+
+
+Started GET "/" for ::1 at 2016-05-06 18:02:03 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 401ms (Views: 397.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-b13c7265d01a5c3c26bcb60e2328fed60b55960daf962038d5a2a08a4c096bb9.css?body=1" for ::1 at 2016-05-06 18:02:04 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 18:02:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 18:02:04 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-05-06 18:02:04 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 18:02:04 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 18:02:04 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 18:02:04 -0700
+
+
+Started GET "/" for ::1 at 2016-05-06 18:02:06 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-b13c7265d01a5c3c26bcb60e2328fed60b55960daf962038d5a2a08a4c096bb9.css?body=1" for ::1 at 2016-05-06 18:02:07 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-05-06 18:02:07 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 18:02:07 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 18:02:07 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 18:02:07 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 18:02:07 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 18:02:07 -0700
+
+
+Started GET "/" for ::1 at 2016-05-06 18:04:11 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 944ms (Views: 914.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.self-827548520d58c98096f8695dbb18830c632a529314ee628a2a3f9941dd4be839.css?body=1" for ::1 at 2016-05-06 18:04:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 18:04:13 -0700
+
+
+Started GET "/assets/welcome.self-b13c7265d01a5c3c26bcb60e2328fed60b55960daf962038d5a2a08a4c096bb9.css?body=1" for ::1 at 2016-05-06 18:04:13 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 18:04:13 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-05-06 18:04:13 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 18:04:13 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 18:04:13 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 18:04:13 -0700
+
+
+Started GET "/" for ::1 at 2016-05-06 18:07:32 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 285ms (Views: 279.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.self-eb1504f54317bafddd6c2aedce4b86cee864780a788b150cf297c729934fb01f.css?body=1" for ::1 at 2016-05-06 18:07:33 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-05-06 18:07:33 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 18:07:33 -0700
+
+
+Started GET "/assets/welcome.self-d9abea48ecac88a672d63deb74f4f993f4aca093a47267975a913ee4f5b62109.css?body=1" for ::1 at 2016-05-06 18:07:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 18:07:33 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 18:07:33 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 18:07:33 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 18:07:33 -0700
+
+
+Started GET "/welcome/about" for ::1 at 2016-05-06 18:07:37 -0700
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-06 18:08:09 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 127ms (Views: 126.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-ade96d61f5b9e1d607828a5d5b5da947fa4b0402ca13a8e130fb4847b75f19fa.css?body=1" for ::1 at 2016-05-06 18:08:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 18:08:09 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 18:08:09 -0700
+
+
+Started GET "/assets/about.self-eb1504f54317bafddd6c2aedce4b86cee864780a788b150cf297c729934fb01f.css?body=1" for ::1 at 2016-05-06 18:08:09 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 18:08:09 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-05-06 18:08:09 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 18:08:09 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 18:08:09 -0700
+
+
+Started GET "/welcome/about" for ::1 at 2016-05-06 18:08:14 -0700
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/about" for ::1 at 2016-05-06 18:08:27 -0700
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 125ms (Views: 124.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.self-9eea89e834e4f3231781aca1ab4934be056188573b73ec677f97fed0d09af73a.css?body=1" for ::1 at 2016-05-06 18:08:28 -0700
+
+
+Started GET "/assets/welcome.self-ade96d61f5b9e1d607828a5d5b5da947fa4b0402ca13a8e130fb4847b75f19fa.css?body=1" for ::1 at 2016-05-06 18:08:28 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-05-06 18:08:28 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 18:08:28 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 18:08:28 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 18:08:28 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 18:08:28 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 18:08:28 -0700
+
+
+Started GET "/welcome/about" for ::1 at 2016-05-06 18:08:54 -0700
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 55ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.self-204c3e8cc6130c33bb09572c9457818ed9aaba970d6828b1757776a47120c601.css?body=1" for ::1 at 2016-05-06 18:08:54 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 18:08:54 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 18:08:54 -0700
+
+
+Started GET "/assets/welcome.self-ade96d61f5b9e1d607828a5d5b5da947fa4b0402ca13a8e130fb4847b75f19fa.css?body=1" for ::1 at 2016-05-06 18:08:54 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-05-06 18:08:54 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 18:08:54 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 18:08:54 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 18:08:54 -0700
+
+
+Started GET "/welcome/about" for ::1 at 2016-05-06 18:10:07 -0700
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 192ms (Views: 191.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-05-06 18:10:08 -0700
+
+
+Started GET "/assets/about.self-204c3e8cc6130c33bb09572c9457818ed9aaba970d6828b1757776a47120c601.css?body=1" for ::1 at 2016-05-06 18:10:08 -0700
+
+
+Started GET "/assets/welcome.self-ade96d61f5b9e1d607828a5d5b5da947fa4b0402ca13a8e130fb4847b75f19fa.css?body=1" for ::1 at 2016-05-06 18:10:08 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 18:10:08 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 18:10:08 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 18:10:08 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 18:10:08 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 18:10:08 -0700
+
+
+Started GET "/" for ::1 at 2016-05-06 18:10:14 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-06 18:10:45 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 92ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 18:10:45 -0700
+
+
+Started GET "/assets/welcome.self-ade96d61f5b9e1d607828a5d5b5da947fa4b0402ca13a8e130fb4847b75f19fa.css?body=1" for ::1 at 2016-05-06 18:10:45 -0700
+
+
+Started GET "/assets/about.self-204c3e8cc6130c33bb09572c9457818ed9aaba970d6828b1757776a47120c601.css?body=1" for ::1 at 2016-05-06 18:10:45 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 18:10:45 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-05-06 18:10:45 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 18:10:45 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 18:10:45 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 18:10:45 -0700
+
+
+Started GET "/" for ::1 at 2016-05-06 18:11:22 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 212ms (Views: 212.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-05-06 18:11:23 -0700
+
+
+Started GET "/assets/welcome.self-39922315c9e2b969674b3a39876da10edcd061b3f5f588b03060e4bf15ca8277.css?body=1" for ::1 at 2016-05-06 18:11:23 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-06 18:11:23 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-06 18:11:23 -0700
+
+
+Started GET "/assets/about.self-204c3e8cc6130c33bb09572c9457818ed9aaba970d6828b1757776a47120c601.css?body=1" for ::1 at 2016-05-06 18:11:23 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-06 18:11:23 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-06 18:11:23 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-06 18:11:23 -0700
+
+
+Started GET "/welcome/about" for ::1 at 2016-05-06 18:11:25 -0700
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for ::1 at 2016-05-06 18:11:29 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/about" for ::1 at 2016-05-06 18:11:33 -0700
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.0ms)
