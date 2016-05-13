@@ -8202,3 +8202,240 @@ Processing by Devise::SessionsController#new as HTML
   Rendered devise/shared/_links.html.erb (3.4ms)
   Rendered devise/sessions/new.html.erb within layouts/application (7.9ms)
 Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-13 08:35:52 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 888ms (Views: 866.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-13 08:35:53 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-13 08:35:58 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (1548.6ms)
+Completed 200 OK in 1602ms (Views: 1587.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2016-05-13 08:36:09 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2aP5xMYEmJHJ/2lp4q57SqXb+xoU8GtaW3rXa8joyhYgyQYQLjiqWYMpifqvHCHfGbgpkE5fMj1jjoLXYGaeuw==", "user"=>{"email"=>"eggandcheesesandwich@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (15.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'eggandcheesesandwich@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 520ms (Views: 28.9ms | ActiveRecord: 15.9ms)
+
+
+Started POST "/users" for ::1 at 2016-05-13 08:36:27 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h8v1W5iF8pEQbOJ5OgrzD8ZW85NbwnMqAiWJJeC+RC9+oQqPcLnAWVq6Aup3uKmaejUhGQFtKk060dyZSDAQgg==", "user"=>{"email"=>"eggandcheesesandwich+1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'eggandcheesesandwich+1@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.html.erb (4.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 248ms (Views: 96.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for ::1 at 2016-05-13 08:36:38 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qZt/bP7wsQfcU4YruWEpZ6fDtZIImhO2AuEnjbPoqmVQ8YC4FsyDz5aFZrj003PyG6BnGFI1StE6FXIxG2b+yA==", "user"=>{"email"=>"eggandcheesesandwich+1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'eggandcheesesandwich+1@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (20.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "eggandcheesesandwich+1@gmail.com"], ["encrypted_password", "$2a$11$rRjFqRmkKHwwkU1v5uySu.aA4i7il.tb3VJep6jG.5PJuGK.7h1Ky"], ["created_at", "2016-05-13 15:36:38.682256"], ["updated_at", "2016-05-13 15:36:38.682256"], ["confirmation_token", "u4sdheB-u1fgCov6YXwF"], ["confirmation_sent_at", "2016-05-13 15:36:38.682501"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (3.5ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 489.1ms
+
+Sent mail to eggandcheesesandwich+1@gmail.com (50.6ms)
+Date: Fri, 13 May 2016 08:36:39 -0700
+From: sender@mail.com
+Reply-To: sender@mail.com
+To: eggandcheesesandwich+1@gmail.com
+Message-ID: <5735f4874f513_4763ff726641e849341c@tests-MBP.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome eggandcheesesandwich+1@gmail.com!</p>
+
+<p>You can confirm your Blocipedia account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=u4sdheB-u1fgCov6YXwF">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 797ms (ActiveRecord: 23.6ms)
+
+
+Started GET "/" for ::1 at 2016-05-13 08:36:39 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 64ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=u4sdheB-u1fgCov6YXwF" for ::1 at 2016-05-13 08:37:06 -0700
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"u4sdheB-u1fgCov6YXwF"}
+  [1m[35mUser Load (21.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["confirmation_token", "u4sdheB-u1fgCov6YXwF"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["confirmed_at", "2016-05-13 15:37:06.237062"], ["updated_at", "2016-05-13 15:37:06.237502"], ["id", 3]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 104ms (ActiveRecord: 24.6ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-05-13 08:37:06 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (41.5ms)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-05-13 08:37:25 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x/I7Lih7iM4n8WNXwRc+4svKlFO86y93ON09XfEYuZo+mMT6wEe6Bm0ng8SMpWR3d6lG2eZEdhAAKWjhWZbtNw==", "user"=>{"email"=>"eggandcheesesandwich+1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "eggandcheesesandwich+1@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-05-13 15:37:25.638534"], ["current_sign_in_at", "2016-05-13 15:37:25.638534"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2016-05-13 15:37:25.639214"], ["id", 3]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 152ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-13 08:37:25 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for ::1 at 2016-05-13 08:37:30 -0700
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-05-13 08:37:32 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-05-13 08:37:34 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-05-13 08:52:01 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Yqwui/mq2WfGV21n7w5o3ScxFopK9aeKZlNjVeMFZ853nTo7BLRSbSkEfad9fAB0zO4pVsECqD5ROB+Wzts/Tg=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 1829ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-05-13 08:52:04 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 752ms (Views: 751.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-13 08:52:09 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (166.6ms)
+Completed 200 OK in 196ms (Views: 194.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-05-13 08:52:26 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWiAVo097DjP6JqcTYA64CRPo9Dv767cDyM5YRfwJScebb7I0SUhjdMDaBEwW9HC2f5jHly7alfxzfC+zU7ejg==", "user"=>{"email"=>"eggandcheesesandwich+2@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'eggandcheesesandwich+2@gmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "eggandcheesesandwich+2@gmail.com"], ["encrypted_password", "$2a$11$qDrsV4Zl.E/OvOiXW3mjv.hFEnah.pIHlAIK4U/9wXJsFB7VBkP0u"], ["created_at", "2016-05-13 15:52:26.544447"], ["updated_at", "2016-05-13 15:52:26.544447"], ["confirmation_token", "FFjFuzMknAGUCyPDrguH"], ["confirmation_sent_at", "2016-05-13 15:52:26.544702"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  Rendered devise/mailer/confirmation_instructions.html.erb (3.7ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 638.6ms
+
+Sent mail to eggandcheesesandwich+2@gmail.com (839.3ms)
+Date: Fri, 13 May 2016 08:52:27 -0700
+From: sender@mail.com
+Reply-To: sender@mail.com
+To: eggandcheesesandwich+2@gmail.com
+Message-ID: <5735f83b4888e_6c13fcfa058339c17be@tests-MBP.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome eggandcheesesandwich+2@gmail.com!</p>
+
+<p>You can confirm your Blocipedia account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=FFjFuzMknAGUCyPDrguH">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1909ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2016-05-13 08:52:28 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=FFjFuzMknAGUCyPDrguH" for ::1 at 2016-05-13 08:54:07 -0700
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"FFjFuzMknAGUCyPDrguH"}
+  [1m[36mUser Load (49.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["confirmation_token", "FFjFuzMknAGUCyPDrguH"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["confirmed_at", "2016-05-13 15:54:08.162566"], ["updated_at", "2016-05-13 15:54:08.162996"], ["id", 4]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 83ms (ActiveRecord: 52.5ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-05-13 08:54:08 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 114ms (Views: 113.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-05-13 08:54:18 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mSraUtFyWLCj2QrEiW+J1qiI0zZIBSsfF3JHfbJs6cDWL+TMjWqVBb8y+En0tGL0VTkT+PtR75TpnI6iaNISaQ==", "user"=>{"email"=>"eggandcheesesandwich+2@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "eggandcheesesandwich+2@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-05-13 15:54:18.383236"], ["current_sign_in_at", "2016-05-13 15:54:18.383236"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2016-05-13 15:54:18.383960"], ["id", 4]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 154ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2016-05-13 08:54:18 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.1ms)
