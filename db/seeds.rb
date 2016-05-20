@@ -7,8 +7,8 @@ end
 
 30.times do
   Wiki.create!(
-    :title          => Faker::Lorem.words(rand(2..10)),
-    :body           => Faker::Lorem.paragraphs(rand(2..8)).join('\n')
+    :title          => Faker::Lorem.words(rand(2..10)).join(' '),
+    :body           => Faker::Lorem.paragraphs(rand(2..8)).join('<br><br>')
   )
 end
 
