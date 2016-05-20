@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 gem 'devise'
+gem "pundit"
+gem 'faker'
 
 group :production do
   gem 'pg'
@@ -21,7 +23,6 @@ gem 'turbolinks'
 gem 'bootstrap'
 gem 'figaro'
 gem 'pry'
-gem 'figaro'
 
 group :development, :test do
   gem 'byebug'
