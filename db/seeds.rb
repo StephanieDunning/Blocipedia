@@ -2,6 +2,7 @@
   User.create!(
     :email                  => Faker::Internet.email,
     :password               => "helloworld",
+    :password_confirmation  => "helloworld"
   )
 end
 
@@ -14,7 +15,7 @@ end
 
 wikis = Wiki.all
 
-standard = User.create(
+  standard = User.create(
     email:    'standard@example.com',
     password: 'helloworld',
     role:     'standard'
@@ -29,7 +30,7 @@ standard = User.create(
   premium.save!
 
   admin = User.create(
-  email:    'eggandcheesesandwich@gmail.com',
+    email:    'eggandcheesesandwich@gmail.com',
     password: 'helloworld',
     role:     'admin'
   )

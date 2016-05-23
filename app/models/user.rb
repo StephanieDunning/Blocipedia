@@ -9,4 +9,19 @@ class User < ActiveRecord::Base
 
   before_save { self.role ||= :standard}
 
+  def standard?
+    role == "standard"
+  end
+
+  def premium?
+    role == "premium"
+  end
+
+  def admin?
+    role == "admin"
+  end
+
+  def downgrade
+    self.update_attribute(:role, :standard)
+  end
 end

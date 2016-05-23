@@ -5,6 +5,7 @@ gem 'rails', '4.2.5'
 gem 'devise'
 gem "pundit"
 gem 'faker'
+gem 'stripe'
 
 group :production do
   gem 'pg'
@@ -30,6 +31,5 @@ group :development, :test do
   gem 'spring'
   gem 'rspec-rails'
   gem 'shoulda'
-  gem 'faker'
   gem 'factory_girl_rails'
 end
