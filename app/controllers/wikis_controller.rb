@@ -1,8 +1,6 @@
 class WikisController < ApplicationController
-  before_action :authorize_user, only: [:destroy]
-
   def index
-    @wiki = Wiki.all
+    @wikis = Wiki.all
   end
 
   def show
@@ -14,7 +12,8 @@ class WikisController < ApplicationController
   end
 
   def create
-    @wiki = current_user.wikis.build(wiki_params)
+    @wiki = Wiki.new(wiki_params)
+    @wiki.user = current_user
 
     if @wiki.save
       flash[:notice] = "Wiki was saved."
@@ -58,13 +57,5 @@ private
 
   def wiki_params
     params.require(:wiki).permit(:title, :body, :private)
-  end
-
-  def authorize_user
-    @wiki = Wiki.find(params[:id])
-    unless current_user == @wiki.user || current_user.admin?
-      flash[:alert] = "You must be an admin to do that."
-      redirect_to @wiki
-    end
   end
 end

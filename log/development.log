@@ -19719,3 +19719,404 @@ Processing by WikisController#show as HTML
   [1m[35mWiki Load (0.1ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 1]]
   Rendered wikis/show.html.erb within layouts/application (0.8ms)
 Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_wikis_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_wikis_on_user_id' AND type='index'
+[0m
+
+
+Started GET "/" for ::1 at 2016-05-23 16:09:33 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (9.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 23]]
+Completed 200 OK in 1375ms (Views: 1354.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-23 16:09:39 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (1664.6ms)
+Completed 200 OK in 1723ms (Views: 1710.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-05-23 16:09:58 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mo4aG9XLrcI1To8/A+L/M6T24d5XsD+NzZ7XXPoNhDyCpzKkTVISw0DCbxWTbqR45vR7m64/6ofV5COAJh44qQ==", "user"=>{"email"=>"eggandcheesesandwich+1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'eggandcheesesandwich+1@gmail.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "eggandcheesesandwich+1@gmail.com"], ["encrypted_password", "$2a$11$vSgn6V4BrxZxFWK888.2E.WhlwCk1S/V19Yx6NuWFwcPVOyeikhpO"], ["role", "0"], ["created_at", "2016-05-23 23:09:58.858934"], ["updated_at", "2016-05-23 23:09:58.858934"], ["confirmation_token", "QCJ4qmDayyhAgGzMW6zs"], ["confirmation_sent_at", "2016-05-23 23:09:58.859285"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  Rendered devise/mailer/confirmation_instructions.html.erb (3.4ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 552.3ms
+
+Sent mail to eggandcheesesandwich+1@gmail.com (596.3ms)
+Date: Mon, 23 May 2016 16:09:59 -0700
+From: sender@mail.com
+Reply-To: sender@mail.com
+To: eggandcheesesandwich+1@gmail.com
+Message-ID: <57438dc781515_11853fe7a74bd5d828443@tests-MBP.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome eggandcheesesandwich+1@gmail.com!</p>
+
+<p>You can confirm your Blocipedia account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=QCJ4qmDayyhAgGzMW6zs">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1736ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/" for ::1 at 2016-05-23 16:10:00 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=QCJ4qmDayyhAgGzMW6zs" for ::1 at 2016-05-23 16:12:45 -0700
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"QCJ4qmDayyhAgGzMW6zs"}
+  [1m[36mUser Load (26.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["confirmation_token", "QCJ4qmDayyhAgGzMW6zs"]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (93.1ms)[0m  [1mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["confirmed_at", "2016-05-23 23:12:45.798896"], ["updated_at", "2016-05-23 23:12:45.801513"], ["id", 2]]
+  [1m[35m (113.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 339ms (ActiveRecord: 233.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-05-23 16:12:46 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (19.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (170.4ms)
+Completed 200 OK in 572ms (Views: 570.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-05-23 16:12:54 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8yZU4Va+mDMCQGFWY2Dt/RKf3VtY+oA4DrBXapMn0o9DD3xezicnMnfMgXzz7La2UJ1HHqF1VTIWyqO2TzRuGg==", "user"=>{"email"=>"eggandcheesesandwich+1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "eggandcheesesandwich+1@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-05-23 23:12:54.640348"], ["current_sign_in_at", "2016-05-23 23:12:54.640348"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2016-05-23 23:12:54.641664"], ["id", 2]]
+  [1m[35m (3.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 158ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/" for ::1 at 2016-05-23 16:12:54 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 49ms (Views: 48.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/wikis" for ::1 at 2016-05-23 16:13:02 -0700
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered wikis/index.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6:   </div>
+     7: <% end %>
+     8: 
+     9: <% @wiki.each do |wiki| %>
+    10:   <div class="media">
+    11:     <div class="media-body">
+    12:       <h4 class="media-heading">
+  app/views/wikis/index.html.erb:9:in `_app_views_wikis_index_html_erb__1860811078909854432_70264250375480'
+
+
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.0ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (140.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (73.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (184.4ms)
+
+
+Started GET "/wikis" for ::1 at 2016-05-23 16:13:04 -0700
+Processing by WikisController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered wikis/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6:   </div>
+     7: <% end %>
+     8: 
+     9: <% @wiki.each do |wiki| %>
+    10:   <div class="media">
+    11:     <div class="media-body">
+    12:       <h4 class="media-heading">
+  app/views/wikis/index.html.erb:9:in `_app_views_wikis_index_html_erb__1860811078909854432_70264213791180'
+
+
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.8ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (99.5ms)
+
+
+Started GET "/wikis" for ::1 at 2016-05-23 16:22:02 -0700
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered wikis/index.html.erb within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>All Wikis</h1>
+    2: 
+    3: <% @wiki.each do |wiki| %>
+    4:   <div class="media">
+    5:     <div class="media-body">
+    6:       <h4 class="media-heading">
+  app/views/wikis/index.html.erb:3:in `_app_views_wikis_index_html_erb__1860811078909854432_70264237263240'
+
+
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (175.7ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (95.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (209.5ms)
+
+
+Started GET "/wikis" for ::1 at 2016-05-23 16:22:04 -0700
+Processing by WikisController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered wikis/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>All Wikis</h1>
+    2: 
+    3: <% @wiki.each do |wiki| %>
+    4:   <div class="media">
+    5:     <div class="media-body">
+    6:       <h4 class="media-heading">
+  app/views/wikis/index.html.erb:3:in `_app_views_wikis_index_html_erb__1860811078909854432_70264200563820'
+
+
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.9ms)
+
+
+Started GET "/" for ::1 at 2016-05-23 16:25:32 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 257ms (Views: 254.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-23 16:25:33 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-05-23 16:25:33 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-23 16:25:33 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-23 16:25:33 -0700
+
+
+Started GET "/assets/about.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-23 16:25:33 -0700
+
+
+Started GET "/assets/welcome.self-39922315c9e2b969674b3a39876da10edcd061b3f5f588b03060e4bf15ca8277.css?body=1" for ::1 at 2016-05-23 16:25:33 -0700
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-23 16:25:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-23 16:25:33 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-23 16:25:33 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-23 16:25:33 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-23 16:25:33 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-23 16:25:33 -0700
+
+
+Started GET "/wikis" for ::1 at 2016-05-23 16:25:35 -0700
+Processing by WikisController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered wikis/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>All Wikis</h1>
+    2: 
+    3: <% @wiki.each do |wiki| %>
+    4:   <div class="media">
+    5:     <div class="media-body">
+    6:       <h4 class="media-heading">
+  app/views/wikis/index.html.erb:3:in `_app_views_wikis_index_html_erb__1860811078909854432_70264237263240'
+
+
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.1ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (185.9ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (82.3ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (209.8ms)
+
+
+Started GET "/wikis" for ::1 at 2016-05-23 16:25:36 -0700
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered wikis/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>All Wikis</h1>
+    2: 
+    3: <% @wiki.each do |wiki| %>
+    4:   <div class="media">
+    5:     <div class="media-body">
+    6:       <h4 class="media-heading">
+  app/views/wikis/index.html.erb:3:in `_app_views_wikis_index_html_erb__1860811078909854432_70264200563820'
+
+
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.9ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.1ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.2ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/stephaniedunning/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (106.3ms)
+
+
+Started GET "/" for ::1 at 2016-05-23 16:32:23 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 150ms (Views: 149.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/about.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-23 16:32:24 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-23 16:32:24 -0700
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-23 16:32:24 -0700
+
+
+Started GET "/assets/welcome.self-39922315c9e2b969674b3a39876da10edcd061b3f5f588b03060e4bf15ca8277.css?body=1" for ::1 at 2016-05-23 16:32:24 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-05-23 16:32:24 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-23 16:32:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-23 16:32:24 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-23 16:32:24 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-23 16:32:24 -0700
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-23 16:32:24 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-23 16:32:24 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-23 16:32:24 -0700
+
+
+Started GET "/wikis" for ::1 at 2016-05-23 16:32:26 -0700
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/wikis/1" for ::1 at 2016-05-23 16:32:28 -0700
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 507ms (Views: 28.1ms | ActiveRecord: 0.3ms)
