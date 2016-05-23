@@ -4,6 +4,10 @@ include RandomData
 RSpec.describe User, type: :model do
 
   let(:user) { User.create!(name: "Blocipedia User", email: "user@blocipedia.com", password: "password") }
+  before(:each) { @user = User.create(name: "Blocipedia User", email: "blocipedia.com", password: "password") }
+  subject { @user }
+
+  it { should belong_to(:user) }
 
   it { is_expected.to validate_presence_of(:name) }
   it { is_expected.to validate_length_of(:name).is_at_least(1) }
@@ -20,6 +24,18 @@ RSpec.describe User, type: :model do
   describe "attributes" do
     it "should have name and email attributes" do
       expect(user).to have_attributes(name: "Blocipedia User", email: "user@blocipedia.com")
+    end
+
+    it "responds to standard" do
+      expect(@user).to respond_to(:standard)
+    end
+
+    it "responds to premium?" do
+      expect(@user).to respond_to(:premium?)
+    end
+
+    it "responds to admin?" do
+      expect(@user).to respond_to(:admin?)
     end
   end
 
