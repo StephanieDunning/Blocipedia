@@ -10,13 +10,17 @@
         <%= f.label :body %>
         <%= f.text_area :body, rows: 8, class: 'form-control', placeholder: "Enter wiki body" %>
       </div>
-      <div class="form-group">
-        <%= f.label :private %>
-        <%= f.radio_button :private, true, class: 'form-control' %> Yes
-        <%= f.radio_button :private, false, checked: true, class: 'form-control' %> No
-      </div>
-      <div class="form-group">
-        <%= f.submit "Save", class: 'btn btn-success' %>
-      </div>
-    <% end %>
-  </div>
+      <div class= "col-md-12">
+        <% if current_user.admin? || current_user.premium? %>
+          <div class="form-group">
+            <%= f.label :private, class: 'checkbox' do %>
+              <%= f.check_box :private %> Private wiki
+            <% end %>
+          </div>
+        <% end %>
+         <div class="form-group">
+           <%= f.submit "Save", class: 'btn btn-success' %>
+         </div>
+       <% end %>
+     </div>
+   </div>

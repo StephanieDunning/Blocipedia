@@ -1,5 +1,9 @@
  <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
+<% if current_user.premium? %>
+  <button type="button" class="btn btn-xs btn-info">Premium</button>
+<% end %>
+
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
@@ -35,7 +39,7 @@
 <% if current_user.standard? %>
   <%= link_to "Upgrade to Premium", new_charge_path, class: 'btn btn-success' %>
 <% else %>
-  <%= link_to "Downgrade", downgrade_path, class: 'btn btn-warning', data: { confirm: "Are you sure?" } %>
+  <%= link_to "Downgrade", downgrade_path, class: 'btn btn-warning', data: { confirm: "Are you sure? All your private wikis will become public." } %>
 <% end %>
 
 <h3>Cancel my account</h3>

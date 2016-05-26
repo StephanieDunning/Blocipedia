@@ -21,7 +21,20 @@ class User < ActiveRecord::Base
     role == "admin"
   end
 
+  def upgrade
+    self.update_attribute(:role, :premium)
+    self.save
+  end
+
   def downgrade
     self.update_attribute(:role, :standard)
+    make_wikis_public
+    self.save
+  end
+
+  def make_wikis_public
+    self.wikis.each do |wikis|
+      wikis.update(private: false)
+    end
   end
 end
