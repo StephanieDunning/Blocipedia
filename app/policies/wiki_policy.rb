@@ -1,13 +1,13 @@
 class WikiPolicy < ApplicationPolicy
-  attr_reader :user, :wiki
+  # attr_reader :user, :wiki
 
   def show?
     record.public || (user.admin? || user.premium? || record.user == user)
   end
 
-  def user?
-    user.present?
-  end
+  # def user?
+  #   user.present?
+  # end
 
   def index?
     true
@@ -22,7 +22,7 @@ class WikiPolicy < ApplicationPolicy
   end
 
   def update?
-    user.present || user.admin
+    user.present? || user.admin?
   end
 
   def destroy?
