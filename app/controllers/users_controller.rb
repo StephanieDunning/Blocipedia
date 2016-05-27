@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   def new
     @user = User.new
   end
@@ -24,5 +25,15 @@ class UsersController < ApplicationController
   end
 
   def show
+  end
+
+  def downgrade
+    if current_user.downgrade
+      flash[:notice] = "You're account is now standard."
+      redirect_to root_path
+    else
+      flash[:notice] = "Something went wrong. Please try again."
+      redirect_to edit_user_registration_path
+    end
   end
 end
