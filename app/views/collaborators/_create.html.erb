@@ -1,0 +1,7 @@
+<div class="col-md-6">
+<%= form_for @collaborator do |f| %>
+  <%= f.select :user_id, @users, include_blank: true %>
+  <%= f.hidden_field :wiki_id, value: @wiki.id %>
+  <%= f.submit "Add Collaborator" %>
+<% end %>
+</div>

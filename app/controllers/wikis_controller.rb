@@ -3,8 +3,7 @@ class WikisController < ApplicationController
   before_filter :authenticate_user!, except: [:index, :show]
 
   def index
-    @wikis = Wiki.visible_to(current_user)
-    authorize @wikis
+    @wikis = policy_scope(Wiki)
   end
 
   def show
@@ -33,8 +32,11 @@ class WikisController < ApplicationController
   end
 
   def edit
+    @collaborator = Collaborator.new
     @wiki = Wiki.find(params[:id])
-    @wiki.user = current_user
+    @collaborators = @wiki.collaborators
+    collab_users = @wiki.users
+    @users = User.where.not(id: current_user.id).map{|u| [u.email, u.id] unless collab_users.include?(u)}.compact
     authorize @wiki
   end
 

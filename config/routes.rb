@@ -4,11 +4,12 @@ Rails.application.routes.draw do
   resources :wikis
   resources :charges
   resources :users, only: [:create]
+  resources :collaborators, only: [:create, :destroy]
 
   get "welcome/index"
   get 'about' => 'welcome#about'
   get 'downgrade' =>'users#downgrade'
-  
+
   root 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
