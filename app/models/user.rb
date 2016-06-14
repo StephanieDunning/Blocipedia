@@ -40,4 +40,8 @@ class User < ActiveRecord::Base
       wikis.update(private: false)
     end
   end
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
 end
